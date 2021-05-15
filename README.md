@@ -7,7 +7,7 @@ Curve reconstruction is a common problem in computer vision applications where a
 ### Iterative Robust Least Squares
 Ordinary Least Squares (OLS) relies on a Gaussian model to represent noise, which prevents its application in case of more complex noise generation processes and outliers, as shown below 
 <p align="center">
-  <img width="250" src="images/OLS.png">
+  <img width="300" src="images/OLS.png">
 </p>
 
 To overcome this problem alternative noise models with heavier tails than the Gaussian can be used. This leads to an iterative solution of the curve optimization problem, such as the Iterative Robust Least Squares method [1]. Since the solution is iterative it is necessary to specify an initial guess for the parameters `A_init`.
@@ -28,7 +28,7 @@ model_irls = LinearModel('line', [A_irls])
 y_irls = model_irls.predict(x)
 ```
 <p align="center">
-  <img width="250" src="images/IRLS.png">
+  <img width="300" src="images/IRLS.png">
 </p>
 
 See `notebooks` for more details.
@@ -55,6 +55,9 @@ A_smrf = SMRF(X_im,y_im,A_init,noise_model,scale)
 model_smrf = LinearModel('line', A_smrf)
 Y_smrf = model_smrf.predict(x)
 ```
+<p align="center">
+  <img width="300" src="images/IRLS.png">
+</p>
 See `notebooks` for more details.
 
 ### References
