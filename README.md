@@ -58,6 +58,7 @@ Y_smrf = model_smrf.predict(x)
 <p align="center">
   <img width="300" src="images/SMRF.png">
 </p>
+
 See `notebooks` for more details.
 
 ### References
