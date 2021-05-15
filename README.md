@@ -56,7 +56,7 @@ model_smrf = LinearModel('line', A_smrf)
 Y_smrf = model_smrf.predict(x)
 ```
 <p align="center">
-  <img width="300" src="images/IRLS.png">
+  <img width="300" src="images/SMRF.png">
 </p>
 See `notebooks` for more details.
 
